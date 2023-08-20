@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: Roboto;
 }
 /*nav bar */
 .navbar {
@@ -63,11 +63,12 @@
   background-color: rgb(0, 0, 0);
   margin: 3px 0;
 }
+
 /* bg img */
 .img-container {
-  background-image: url(./Images/01bg.png);
+  background-image: url(images/background.png);
   width: 100%;
-  height: 700px;
+  height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -76,25 +77,26 @@
   padding: 0;
 }
 
-.event1-topic-name {
+.res-topic-name {
   color: #fff;
   font-family: Roboto;
-  font-size: 200px;
+  font-size: 150px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.event1-topic {
-  left: 30%;
+.topic {
+  left: 23%;
   top: 40%;
   position: absolute;
 }
-/*hotel event1*/
-.hotelevent1 {
+
+/*hotel about*/
+.hotelabout {
   margin: 50px 9%;
   text-align: center;
 }
-.event1-hed {
+.about-hed {
   color: #000;
   font-family: Roboto Slab;
   font-size: 60px;
@@ -103,7 +105,7 @@
   line-height: normal;
 }
 
-.event1-para {
+.about-para {
   padding: 10px 0 0 0;
   color: rgba(0, 0, 0, 0.66);
   text-align: center;
@@ -113,21 +115,156 @@
   font-weight: 700;
   line-height: normal;
 }
-.event1-bg2 {
-  margin: 50px 20%;
+
+/*facilities*/
+.facilities {
+  margin: 50px 9%;
 }
 
-.event1-bg2-img {
-  background-image: url(./images/02bg.png);
-  width: 100%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+.facilities-topic {
+  color: #000;
+  font-family: Roboto Slab;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.facilities-u-li {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 50px 0;
+}
+/*Bar*/
+.Bar-full {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 80px;
+}
+.Bar-img {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.Bar-para {
+  color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Bar-description {
+  padding: 50px 0 0 0;
+}
+
+/*pool*/
+.pool-full {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 80px;
+}
+.pool {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.pool-para {
+  color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 0px;
+}
+
+.pool-description {
+  padding: 20px 0 0 0;
+}
+
+/*Fitness*/
+.Fitness-full {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 80px;
+}
+.Fitness {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.Fitness-para {
+  color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Fitness-description {
+  padding: 50px 0 0 0;
+}
+
+.center-container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.center-button {
+  padding: 12px 50px;
+  font-size: 16px;
+  background-color: #0e0d4f;
+  color: white;
+  border: none;
+  cursor: pointer;
   border-radius: 50px;
+}
+.event-topic {
+  color: #000;
+  font-family: Roboto Slab;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.center-container2 {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.center-button2 {
+  padding: 20px 60px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #0e0d4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0px 50px; /* Added margin to separate buttons */
+  border-radius: 5px;
+}
+.center-button2 a {
+  text-decoration: none;
+  color: white;
 }
 /*Footer*/
 .container {
@@ -211,6 +348,20 @@ ul {
   padding-right: 30%;
   padding-top: 15px;
 }
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
 /*scolder bar*/
 ::-webkit-scrollbar {
   width: 8px;
@@ -228,7 +379,7 @@ ul {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 70%;
+    width: 40%;
     position: absolute;
     top: 70px;
     left: 0;
@@ -256,6 +407,7 @@ ul {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 500px) {
   /*nav bar */
   .nav-links {
@@ -275,30 +427,101 @@ ul {
     gap: 520%;
   }
   /*bg */
-  .event1-topic-name {
-    font-size: 70px;
-  }
-  .event1-topic {
-    top: 18%;
-    left: 90px;
+  .topic {
+    top: 22%;
+    left: 9%;
     position: absolute;
+  }
+  .res-topic-name {
+    font-size: 60px;
   }
 
   .img-container {
-    height: 300px;
+    height: 350px;
   }
-  /*hotelevent1*/
-  .event1-bg2 {
-    margin: 10px;
+  /*hotel about*/
+  .hotelabout {
+    margin: 20px 10px;
   }
-  .event1-bg2-img {
-    width: 100%;
-    height: 400px;
+  .about-hed {
+    font-size: 40px;
+    font-weight: 600;
   }
-  .event1-para {
+
+  .about-para {
+    padding: 10px 0 0 0;
     font-size: 20px;
   }
-  .event1-hed {
-    font-size: 40px;
+  /*facilities*/
+  .facilities {
+    margin: 10px;
+  }
+  .Fitness-full {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Bar-full {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pool-full {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .facilities-topic {
+    font-size: 50px;
+  }
+  .pool,
+  .Bar-img {
+    width: 350px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+  }
+  .Fitness {
+    width: 350px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+  }
+  .facilities-u-li {
+    font-size: 30px;
+  }
+  .pool-description,
+  .Bar-description,
+  .Fitness-description {
+    padding: 0;
+    margin: 0;
+  }
+  .pool-para,
+  .pool-para2,
+  .Bar-para,
+  .Bar-para2,
+  .Fitness-para,
+  .Fitness-para2 {
+    font-size: 20px;
+  }
+  /*branches*/
+  .branches-details-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /*branches*/
+  .branches {
+    margin: 10px;
+  }
+  .brn-im {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+  }
+  .bran-li {
+    font-size: 25px;
+  }
+  .bran-list-box {
+    padding: 0 0 0 40px;
+  }
+  .center-button2 {
+    margin: 0 0 20px 0;
   }
 }
