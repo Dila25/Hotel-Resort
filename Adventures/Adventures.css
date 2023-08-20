@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*nav bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  position: absolute;
+  gap: 120%;
+}
+
+.logo a {
+  color: #ffffff;
+  font-family: Roboto Slab;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -19.2px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  background-color: #010c26;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Style for the hamburger menu icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 3px 0;
+}
+
+/* bg img */
+.img-container {
+  background-image: url(./Images/ad-bg.webp);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.ad-topic-name {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.ad-topic {
+  top: 40%;
+  left: 15%;
+  position: absolute;
+}
+
+/*hotel adventures*/
+.hoteladventures {
+  margin: 50px 9%;
+  text-align: center;
+}
+.adventures-hed {
+  color: #000;
+  font-family: Roboto Slab;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.adventures-para {
+  padding: 10px 0 0 0;
+  color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/*adventure-activity*/
+.adventure-activity {
+  margin: 50px 9%;
+}
+.adventure-hed {
+  color: #000;
+  font-family: Roboto Slab;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 20px;
+  padding: 50px 0 0 0;
+}
+.img1 {
+  background-image: url(./images/1.png);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.img2 {
+  background-image: url(./images/2.png);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.img3 {
+  background-image: url(./images/3.png);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.img-topics {
+  color: #0b0b0b;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+/*venue*/
+.venue-section {
+  margin: 50px 9%;
+}
+.venue-hed {
+  color: #000;
+  font-family: Roboto Slab;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.venu-map {
+  padding: 30px 0 0 0;
+}
+/*Footer*/
+.container {
+  max-width: 1280px;
+  margin: auto;
+  font-family: Roboto;
+  padding-left: 70px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #010c26;
+  padding: 30px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #fefefe;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ffffff;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+.footer-col ul li a:hover {
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #dfdfdf;
+}
+.f {
+  font-size: 15px;
+  font-family: Oswald;
+  font-weight: 100;
+  color: #00000049;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 15px;
+}
+/*scolder bar*/
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #050246;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 900px) {
+  /*nav bar */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    color: white;
+    padding: 10px 10px 10px 80px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 3px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    background-color: #010c26;
+    color: white;
+    padding: 10px 10px 10px 20px;
+  }
+  .navbar {
+    gap: 520%;
+  }
+  /*bg */
+  .ad-topic-name {
+    font-size: 70px;
+  }
+  .ad-topic {
+    top: 18%;
+    left: 10px;
+    position: absolute;
+  }
+
+  .img-container {
+    height: 300px;
+  }
+
+  /*hotel adventures*/
+  .hoteladventures {
+    margin: 20px 10px;
+  }
+  .adventures-hed {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .adventures-para {
+    padding: 10px 0 0 0;
+    font-size: 20px;
+  }
+  /*adventure-activity*/
+  .adventure-activity {
+    margin: 10px;
+  }
+  .adventure-hed {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .box-container {
+    flex-direction: column;
+  }
+  .img1 {
+    width: 100%;
+    height: 350px;
+  }
+  .img2 {
+    width: 100%;
+    height: 350px;
+  }
+  .img3 {
+    width: 100%;
+    height: 350px;
+  }
+
+  /*venue*/
+  .venue-hed {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
