@@ -89,7 +89,6 @@
   box-sizing: border-box; /* Include border in sizing */
   display: flex;
   justify-content: center;
-
   padding-left: 50px;
 }
 .form-main {
@@ -143,7 +142,7 @@ input {
   margin: 0;
   padding: 0;
 }
-
+/*footer*/
 .container {
   max-width: 1280px;
   margin: auto;
@@ -278,4 +277,53 @@ ul {
   .navbar {
     gap: 520%;
   }
+  /*form*/
+  .form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box; /* Include border in sizing */
+    display: flex;
+    justify-content: center;
+    
+  }
+  .form-main {
+    border: 3px solid black; /* Add black border */
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 600px; /* Set a maximum width for the form */
+    width: 100%; /* Occupy available space */
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1.5px solid black;
+    border-radius: 2px;
+  }
+  
+  .submit-button {
+    margin-top: 0px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #020f35;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .button {
+    text-align: center;
+  }
+  
 }
